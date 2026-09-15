@@ -1,0 +1,36 @@
+{
+  "name": "teacher-day-2026-miss-tania",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A personal, interactive Teacher's Day 2026 memory built for Miss Tania.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.6.1",
+    "gsap": "3.12.5",
+    "lucide-react": "0.468.0",
+    "motion": "11.15.0",
+    "next": "15.1.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.171.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.0",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "autoprefixer": "10.4.20",
+    "eslint": "8.57.0",
+    "eslint-config-next": "15.1.0",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.16",
+    "typescript": "5.7.2"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
