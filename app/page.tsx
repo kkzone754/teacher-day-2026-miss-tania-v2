@@ -41,7 +41,7 @@ export default function Home() {
         <div className="topline"><span>SCROLL / EXPLORE / REMEMBER</span><span>— KAMRAN</span></div>
       </div>
     </section> : <>
-      <header className="chrome"><b>K / T</b><span>TEACHER'S DAY · 2026</span><span>{String(active+1).padStart(2,"0")} / 07</span></header>
+      <header className="chrome"><b>K / T</b><span>TEACHER&apos;S DAY · 2026</span><span>{String(active+1).padStart(2,"0")} / 07</span></header>
       <div className="progress"><span>0</span><i><b style={{height:`${progress}%`}}/></i><span>100</span></div>
 
       <section className="hero">
@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <section className="note">
-        <span>00 / NOTE</span><div><h3>Before the story, just one thing.</h3><p>A good memory doesn't need a photograph. Sometimes words are enough to bring a whole moment back.</p></div>
+        <span>00 / NOTE</span><div><h3>Before the story, just one thing.</h3><p>A good memory doesn&apos;t need a photograph. Sometimes words are enough to bring a whole moment back.</p></div>
       </section>
 
       {chapters.map((c,i)=><section id={`chapter-${c[0]}`} data-index={i} key={c[0]} className={`chapter theme-${i}`}>
@@ -73,7 +73,7 @@ export default function Home() {
         {i===6&&<div className="dialogue"><span>“Tum har waqt mujhe chai kyun pilate ho?”</span><b>Bas aise hi… mera dil karta tha to aapke liye bhi le aata hun.</b></div>}</div>
       </section>)}
 
-      <section className="final"><span>05 / 10 / 2026 · HAPPY TEACHER'S DAY</span><h2>Thank you,<br/><i>Miss Tania.</i></h2><p>Thank you for the encouragement. Thank you for the patience. Thank you for the memories. And thank you for helping me find a little more confidence in myself.</p><p className="urdu">Aapki encouragement mere liye bohot special thi.</p><div>— Kamran</div><strong>✦</strong></section>
+      <section className="final"><span>05 / 10 / 2026 · HAPPY TEACHER&apos;S DAY</span><h2>Thank you,<br/><i>Miss Tania.</i></h2><p>Thank you for the encouragement. Thank you for the patience. Thank you for the memories. And thank you for helping me find a little more confidence in myself.</p><p className="urdu">Aapki encouragement mere liye bohot special thi.</p><div>— Kamran</div><strong>✦</strong></section>
     </>}
   </main>
 }
