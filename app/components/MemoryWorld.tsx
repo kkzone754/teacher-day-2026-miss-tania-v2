@@ -2,7 +2,6 @@
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
-import * as THREE from "three";
 
 export default function MemoryWorld({ chapter, revealed }: { chapter: number; revealed: boolean }) {
   return (
@@ -20,7 +19,7 @@ export default function MemoryWorld({ chapter, revealed }: { chapter: number; re
 }
 
 function Particles({ chapter }: { chapter: number }) {
-  const ref = useRef<THREE.Points>(null);
+  const ref = useRef<any>(null);
   const count = 360;
   const positions = useMemo(() => {
     const data = new Float32Array(count * 3);
@@ -51,7 +50,7 @@ function Particles({ chapter }: { chapter: number }) {
 }
 
 function FloatingShape({ chapter, revealed }: { chapter: number; revealed: boolean }) {
-  const group = useRef<THREE.Group>(null);
+  const group = useRef<any>(null);
   useFrame((state) => {
     if (!group.current) return;
     group.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.25) * 0.35 + state.clock.elapsedTime * 0.08;
