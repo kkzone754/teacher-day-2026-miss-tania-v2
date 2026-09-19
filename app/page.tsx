@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MemoryWorld from "./components/MemoryWorld";
@@ -135,7 +135,7 @@ export default function Home() {
                   {i === 1 && <><span className="fear-word">FEAR</span><b className="confidence-word">CONFIDENCE</b></>}
                   {i === 2 && <div className="guidance-grid"><i /><i /><i /><b>→</b></div>}
                   {i === 3 && <div className="stage-card"><span>ALADDIN</span><small>THE STAGE / ARTS COUNCIL</small></div>}
-                  {i === 4 && <div className="wave-art">{Array.from({ length: 38 }).map((_, n) => <i key={n} style={{ "--n": n } as CSSProperties} />)}</div>}
+                  {i === 4 && <div className="wave-art">{Array.from({ length: 38 }).map((_, n) => <i key={n} style={{ height: (20 + (n % 7) * 11) + "px" }} />)}</div>}
                   {i === 5 && <div className="song-card"><b>♪</b><span>LET&apos;S<br /><em>TRY IT.</em></span></div>}
                   {i === 6 && <button className={"tea-card " + (tea ? "revealed" : "")} onClick={() => setTea(!tea)} aria-label="Reveal the tea surprise"><div className="steam"><i /><i /><i /></div><div className="cup"><b>{tea ? "THANK YOU" : "TEA"}</b></div><small>{tea ? "THE SURPRISE IS REVEALED" : "CLICK TO REVEAL"}</small></button>}
                 </div>
