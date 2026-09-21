@@ -127,7 +127,7 @@ export default function Home() {
           <section className="note reveal"><span>00 / NOTE</span><div><h3>A good memory doesn&apos;t need a photograph.</h3><p>Sometimes words are enough to bring a whole moment back.</p></div></section>
 
           {chapters.map((c, i) => (
-            <section id={"chapter-" + c[0]} key={c[0]} className={"chapter chapter-" + i}>
+            <section id={"chapter-" + c[0]} key={c[0]} className={"chapter chapter-" + i} data-chapter={c[0]}>
               <div className="chapter-meta"><b>{c[0]}</b><span>{c[1]}</span></div>
               <div className="chapter-stage">
                 <div className={"chapter-art art-" + i} aria-hidden="true">
@@ -151,6 +151,9 @@ export default function Home() {
               </div>
             </section>
           ))}
+
+
+      <div className="chapter-transition" aria-hidden="true"><span /><i /><b /></div>
 
           <section className="memory-pause reveal"><span>08 / THE MEMORY</span><h2>For a little while,<br /><em>everything else disappeared.</em></h2><p>Rehearsals, the stage, the voice, the nervousness — for those moments, I was simply there. Performing.</p></section>
 
