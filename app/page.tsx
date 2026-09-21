@@ -137,7 +137,7 @@ export default function Home() {
                   {i === 3 && <div className="stage-card"><span>ALADDIN</span><small>THE STAGE / ARTS COUNCIL</small></div>}
                   {i === 4 && <div className="wave-art">{Array.from({ length: 38 }).map((_, n) => <i key={n} style={{ height: (20 + (n % 7) * 11) + "px" }} />)}</div>}
                   {i === 5 && <div className="song-card"><b>♪</b><span>LET&apos;S<br /><em>TRY IT.</em></span></div>}
-                  {i === 6 && <button className={"tea-card " + (tea ? "revealed" : "")} onClick={() => setTea(!tea)} aria-label="Reveal the tea surprise"><div className="steam"><i /><i /><i /></div><div className="cup"><b>{tea ? "THANK YOU" : "TEA"}</b></div><small>{tea ? "THE SURPRISE IS REVEALED" : "CLICK TO REVEAL"}</small></button>}
+                  {i === 6 && <button className={"tea-card " + (tea ? "revealed" : "")} onClick={() => setTea(!tea)} aria-label="Reveal the tea surprise"><div className="tea-aura" /><div className="steam"><i /><i /><i /></div><div className="saucer" /><div className="cup"><span className="tea-liquid" /><span className="cup-highlight" /><b>{tea ? "THANK YOU" : "TEA"}</b></div><small>{tea ? "THE SURPRISE IS REVEALED" : "CLICK TO REVEAL"}</small></button>}
                 </div>
                 <div className="chapter-copy">
                   <span className="eyebrow">{c[1]}</span>
